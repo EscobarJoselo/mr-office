@@ -1,11 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 import CartWidget from '../CartWidget';
 export const NavBar = () => {
     return (
-        <div className="contenedor">
+            <div className="contenedor">
+            <h2>Bienvenidos a <span>Mr Office</span></h2>
             <nav className="nav">
                 <div className="cont_nav">
-                    <a className="nav_link" href="#">Mr Office</a>
+                    <a className="nav_link" href="#">Home</a>
                 </div>
                 <ul className="lista_nav">
                     <li>
@@ -21,10 +23,9 @@ export const NavBar = () => {
                     </li>
                 </ul>
             </nav>
-        <h1>Bienvenidos</h1>
         </div>
-        
     );
 }
 
 export default NavBar;
+
