@@ -15,10 +15,10 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
     }
 
     ///setea o reinicia el valor inicial cada vez que hay un cambio sin nececidad de recargar la pagina
-    useEffect(()=>{
+    useEffect(() => {
         setCount(parseInt(initial));
     }, [initial])
-///carrito
+    ///carrito
 
     return (
         <div className='contador'>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ItemCount from '../ItemCount';
 import ItemList from "../ItemList";
 import Title from '../Tittle';
@@ -17,7 +17,7 @@ export const ItemsListContainer = () => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve(preciosCuidados);
-            }, 3000);
+            }, 1000);
         });
 
         getData.then(res => setData(res));
@@ -31,7 +31,7 @@ export const ItemsListContainer = () => {
         <>
             <Title greeting='Mi carrito' />
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
-            <ItemList data={data}/>
+            <ItemList data={data} />
         </>
 
     );
